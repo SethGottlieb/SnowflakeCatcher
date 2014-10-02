@@ -24,13 +24,21 @@ void mouseDragged()
 {
   if(mouseButton == LEFT)
   {
-    fill(0, 100, 200, 150);
-    ellipse(mouseX, mouseY, 10, 10);
+    fill(0, 125, 175, 50);
+    ellipse(pmouseX, pmouseY, 15, 15);
   }
   if(mouseButton == RIGHT)
   {
     fill(0);
-    ellipse(mouseX, mouseY, 50, 50);
+    ellipse(mouseX, mouseY, 100, 100);
+  }
+}
+void keyPressed() 
+{
+  if(key == 'r')
+  {
+    fill(0);
+    rect(0, 0, 500, 500);
   }
 }
 
